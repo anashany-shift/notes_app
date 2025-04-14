@@ -12,12 +12,13 @@ class NotesView extends StatelessWidget {
         shape: CircleBorder(),
         backgroundColor: Colors.cyan,
         onPressed: () {
-          showModalBottomSheet
-            (
-            backgroundColor:  Color(0xff242222),
-            context: context, builder: (context) {
-            return AddNoteBottomSheet();
-          },);
+          showModalBottomSheet(
+            backgroundColor: Color(0xff242222),
+            context: context,
+            builder: (context) {
+              return AddNoteBottomSheet();
+            },
+          );
         },
         child: Icon(Icons.add),
       ),
@@ -25,4 +26,3 @@ class NotesView extends StatelessWidget {
     );
   }
 }
-

@@ -7,13 +7,15 @@ class NoteItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){
-        Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return EditNoteView();
-        },));
+      onTap: () {
+        Navigator.push(context, MaterialPageRoute(
+          builder: (context) {
+            return EditNoteView();
+          },
+        ));
       },
       child: Container(
-        padding: EdgeInsets.only(top: 24,bottom: 24,left: 16),
+        padding: EdgeInsets.only(top: 24, bottom: 24, left: 16),
         decoration: BoxDecoration(
           color: Colors.yellowAccent,
           borderRadius: BorderRadius.circular(16),
@@ -22,19 +24,24 @@ class NoteItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             ListTile(
-
               title: Text(
                 'Flutter Tips',
                 style: TextStyle(fontSize: 26),
               ),
               subtitle: Padding(
-                padding: const EdgeInsets.only(top: 16.0,bottom: 16),
+                padding: const EdgeInsets.only(top: 16.0, bottom: 16),
                 child: Text(
                   'build your career with Anas',
-                  style: TextStyle(fontSize: 20,color: Colors.black.withOpacity(0.5)),
+                  style: TextStyle(
+                      fontSize: 20, color: Colors.black.withOpacity(0.5)),
                 ),
               ),
-              trailing: IconButton(onPressed: (){}, icon: Icon(Icons.delete,size:30,)),
+              trailing: IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.delete,
+                    size: 30,
+                  )),
             ),
             Padding(
               padding: const EdgeInsets.only(right: 24.0),

@@ -11,18 +11,12 @@ class CustomButton extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       height: 55,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
-          color: kPrimaryColor
-      ),
-      child:Center(child:
-      Text(
+          borderRadius: BorderRadius.circular(16), color: kPrimaryColor),
+      child: Center(
+          child: Text(
         'Add',
-        style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold
-        ),
-      )
-      ) ,
+        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+      )),
     );
   }
 }

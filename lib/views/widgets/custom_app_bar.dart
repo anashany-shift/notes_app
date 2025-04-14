@@ -7,18 +7,19 @@ class CustomAppBar extends StatelessWidget {
   final String title;
   final IconData iconData;
 
-
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text(title,style: TextStyle(
-          color: Colors.white,fontSize: 28
-        ),),
+        Text(
+          title,
+          style: TextStyle(color: Colors.white, fontSize: 28),
+        ),
         Spacer(),
-        CustomSearchIcon(iconData: iconData,),
+        CustomSearchIcon(
+          iconData: iconData,
+        ),
       ],
     );
   }
 }
-
