@@ -48,7 +48,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
         SizedBox(
           height: 32,
         ),
-        ColorsListView(isActive: true,),
+        ColorsListView(),
 
         SizedBox(
           height: 32,
