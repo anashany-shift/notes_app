@@ -15,7 +15,7 @@ class CustomButton extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         height: 55,
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16), color: kPrimaryColor),
+            borderRadius: BorderRadius.circular(16), color: Colors.yellowAccent),
         child: Center(
             child:isLoading ?CircularProgressIndicator(): Text(
           'Add',
